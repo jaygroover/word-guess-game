@@ -1,0 +1,12 @@
+ 
+body{
+    background-image:url(../images/marvel-logo.jpeg);
+    background-size: cover;
+
+}
+
+.panel{
+    color: white;
+    opacity: 2;
+    background-color: rgb(44, 44, 250);
+}
