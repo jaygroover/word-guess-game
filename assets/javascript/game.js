@@ -3,7 +3,9 @@ var wordList = [
 "thor",
 "captainamerica",
 "marvel",
-"antman"
+"antman",
+"avengers",
+"wrasp"
 ]
 
 var chosenWord = "";
@@ -14,20 +16,14 @@ var wrongGuesses = [];
 
 var winCounter = 0;
 var lossCounter = 1;
-var numGuesses = 15;
+var numGuesses = 10;
+
 
 function startGame(){
     
-    
-    
-    
-    
-    
-    
-    
     wrongGuessess =[];
     console.log("this is wrong guesses in startGame", wrongGuesses);
-    numGuesses = 15;
+    numGuesses = 10;
     blanksAndSuccesses = [];
 
     
@@ -53,10 +49,6 @@ function checkLetters(letter){
    
     
     
-    
-    
-    
-    
     var letterInWord = false;
 
     for(var i = 0; i < numBlanks; i++){
@@ -80,24 +72,12 @@ function checkLetters(letter){
     }
 
 
-
-
-
-
-
-
 }
    
    
    function roundComplete(){
       
-   
-       
-    
-    
-    
-    
-    document.getElementById('word-blank').innerHTML = blanksAndSuccesses.join(" ");
+   document.getElementById('word-blank').innerHTML = blanksAndSuccesses.join(" ");
        document.getElementById('guesses-left').innerHTML = numGuesses;
        document.getElementById('wrong-guesses').innerHTML = wrongGuesses.join(" ");
    
@@ -137,6 +117,7 @@ function checkLetters(letter){
    
    }
 
+   
 
 
 
